@@ -1,0 +1,16 @@
+.policy {
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    background: #fff;
+    padding: 0 20px;
+}
+.policyWrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.policyWrap h2 {
+    margin-bottom: 40px;
+}

@@ -1,0 +1,131 @@
+.headerWrap {
+    width: 100%;
+    height: 110px;
+    background: var(--white);
+    position: sticky;
+    top: 0;
+    letter-spacing: -0.48px;
+    transition: all 0.35s;
+    border-bottom: 1px solid var(--warm-white);
+    z-index: 1059;
+}
+.headerWrap header {
+    padding: 0 40px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerWrap header nav {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.logo a {
+    display: flex;
+    align-items: center;
+}
+.logo a:first-child img {
+    margin-right: 10px;
+}
+.gnb {
+    display: flex;
+}
+.myPageIcon {
+    display: block;
+    width: 24px;
+    height: 25px;
+    background: url("/src/assets/images/my.svg")no-repeat center;
+}
+.myPageIcon button, .myPageIcon a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.gnb li:last-child {
+    margin-left: 20px;
+}
+.gnb li > a {
+    color: var(--black) !important;
+    transition: all 0.35s;
+}
+.gnb li > a:hover {
+    color: var(--main-color);
+}
+.lngBtn {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: var(--font-size--h3);
+    transition: all 0.35s;
+    color: var(--black) !important;
+}
+.lngBtn span {
+    width: 16px;
+    height: 16px;
+    background: url("/src/assets/images/arrow-down.svg") no-repeat center center / 100%;
+    margin-left: 1rem;
+    transition: all 0.35s;
+}
+.lngBtn.active span {
+    transform: rotate(-180deg);
+}
+.lngBtn:hover {
+    color: var(--main-color);
+}
+.lngBtn svg {
+    font-size: 1.2rem;
+}
+.toolTipContainer {
+    min-width: 100px;
+    height: 84px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid var(--gray--3);;
+    margin-top: 14px;
+    padding: 15px;
+    background: var(--white);
+    z-index: 999;
+    transform: translateX(-20px);
+}
+.myPageContainer a {
+    color: var(--gray--4);
+}
+.myPageContainer a:hover, .myPageContainer a.active {
+    color: #222;
+}
+.toolTipContainer button {
+    text-align: left;
+    margin-bottom: 7px;
+    cursor: pointer;
+    color: var(--gray--4);
+    letter-spacing: -0.48px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.toolTipContainer button:last-child {
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+@media screen and (max-width: 480px) {
+    .headerWrap {padding: 0 20px; height: 85px;}
+    .headerWrap header {padding: 0;}
+    .gnb li:last-child { margin-left: 30px }
+    .logoImg {width: 130px}
+    .logoTicket {transform: scale(0.9)}
+    .lngBtn span {
+        width: 26px;
+        height: 26px;
+        margin-left: 0;
+        background: url("/src/assets/images/global.svg") no-repeat center center / 100%;
+    }
+    .toolTipContainer {
+        width: 120px;
+        height: 100px;
+        padding: 20px;
+        transform: translateX(-20px);
+    }
+}

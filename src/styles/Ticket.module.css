@@ -1,0 +1,622 @@
+.ticketWrapper {
+    padding: 0 40px 100px;
+    margin: 0 auto;
+}
+.ticketHeader {
+    margin-top: 40px;
+    padding-bottom: 30px;
+    font-size: 22px;
+    border-bottom: 1px solid var(--black);
+}
+.ticketInfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 70px 0 60px ;
+    min-height: 650px;
+    border-bottom: 1px solid var(--black);
+}
+.exhibitionImg {
+    width: 30%;
+    height: 100%;
+    display: block;
+    justify-content: flex-start;
+}
+.exhibitionImg img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.infoContainer {
+    max-width: 60%;
+    height: 100%;
+}
+.infoContainer h3 {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+.infoExhibition {
+    padding-bottom: 60px;
+    border-bottom: 1px solid var(--gray--2);
+}
+.infoExhibition ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.infoExhibition ul li {
+    width: 45%;
+    margin-bottom: 20px;
+    display: flex;
+}
+.infoExhibition ul li label {
+    display: block;
+    min-width: 130px;
+    margin-right: 70px;
+}
+.infoExhibition ul li p, .infoExhibition ul li a {
+    display: block;
+    min-width: 210px;
+}
+.infoExhibition ul li:nth-child(odd) {
+    margin-right: 80px;
+}
+.infoExhibition ul li:last-child {
+    margin-bottom: 0;
+}
+.placeLink {
+    position: relative;
+}
+.placeLink:after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 6px;
+    background: url("/src/assets/images/after.svg") no-repeat center / 100%;
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.optionContainer {
+    width: 100%;
+}
+.infoOption {
+    padding: 63px 0 40px;
+}
+.infoOption ul {
+    display: flex;
+    flex-direction: column;
+}
+.infoOption ul li {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+}
+.infoOption ul li:last-child {
+    margin-bottom: 0;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--gray--2);
+}
+.infoOption ul li b {
+    display: block;
+    min-width: 120px;
+    text-align: right;
+    margin-left: 50px;
+    font-weight: var(--font-weight--regualr);
+}
+.optionName {
+    line-height: 1.7;
+}
+.optionName span {
+    display: block;
+    font-size: var(--font-size--h4);
+}
+.btnContainer p, .infoOption ul li b, .totalPrice strong {
+    font-family: 'Montserrat', sans-serif;
+}
+.btnContainer {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+.btnContainer button, .btnContainer p {
+    width: 45px;
+    height: 45px;
+}
+.btnContainer p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid var(--gray--2);
+    border-bottom: 1px solid var(--gray--2);
+}
+.plus { background: url("/src/assets/images/plus.svg") no-repeat center / 100%; }
+.minus { background: url("/src/assets/images/minus.svg") no-repeat center / 100%; }
+.plus:disabled { background:  url("/src/assets/images/plus-disable.svg") no-repeat center / 100%; }
+.minus:disabled { background:  url("/src/assets/images/minus-disable.svg") no-repeat center / 100%; }
+
+.totalPrice {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.totalPrice span {
+    font-size: var(--font-size--h1);
+}
+.buyBtn {
+    display: block;
+    margin: 80px auto 100px;
+}
+.detailInfoContainer {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.detailInfo {
+    height: 400px;
+    overflow: hidden;
+    transition: all 0.35s;
+}
+.detailInfo img {
+    display: block;
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+.detailInfo.view {
+    height: auto;
+}
+.viewMoreBtn {
+    width: 100%;
+    height: 55px;
+    border: 1px solid var(--black);
+    box-shadow: 5px -30px 20px rgb(255, 252, 252);
+    position: relative;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.viewMoreBtn.view {
+    margin-top: 30px;
+    box-shadow: none;
+}
+.viewMoreBtn span {
+    display: inline-block;
+    width: 14px;
+    height: 10px;
+    margin-left: 10px;
+    background: url("/src/assets/images/arrow-down.svg") no-repeat center / 100%;
+    transition: all 0.35s;
+}
+.viewMoreBtn.view span {
+    transform: rotate(-180deg);
+}
+.subInfo {
+    padding: 80px 0 0;
+}
+.subInfo h4 {
+    margin-bottom: 25px;
+}
+.subInfo > article > div {
+    line-height: 1.8;
+}
+.ticketCheck h2 {
+    border: 0;
+    padding: 0 0 30px;
+}
+.verifContainer {
+    background: var(--gray--0);
+    padding: 50px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ticketCheck h3 {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+.verifBtn {
+    width: 280px;
+}
+.verifBtn.success {
+    border: 1px solid var(--main-color);
+    background: var(--white);
+    color: var(--main-color);
+}
+.ticketCheckInfo {
+    padding: 0;
+    border: 0;
+}
+.infoExhibitionCheck {
+    border: 0;
+    padding: 0;
+    margin-bottom: 100px;
+}
+.infoExhibitionCheck p {
+    line-height: 2;
+}
+.orderHistoryContainer ul {
+    height: 161px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid var(--gray--2);
+}
+.orderHistoryContainer ul li {
+    width: 100%;
+    height: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.orderHistoryContainer ul li b {
+    display: block;
+    font-weight: normal;
+}
+.orderHistoryContainer .totalPrice {
+    margin-bottom: 60px;
+}
+.optionChange {
+    width: 100%;
+    background: var(--black);
+    color: #fff;
+}
+.ticketCheckInfo .infoContainer {
+    width: 65%;
+    max-width: unset;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+}
+.checkVisitInfo {
+    margin: 60px 0 100px;
+    transition: all 0.35s;
+}
+.paymentContainer {
+    margin-bottom: 80px;
+}
+.paymentContainer > div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0 25px;
+    margin-bottom: 30px;
+}
+.paymentLabel {
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 44px 0;
+    border: 1px solid var(--gray--3);
+    cursor: pointer;
+}
+.paymentLabel.active {
+    border: 2px solid var(--main-color);
+}
+.paymentLabel img {
+    margin-bottom: 10px;
+}
+.paymentContainer input[type="radio"] {
+    display: none;
+}
+.policyBtn {
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+}
+.ticketCheck .policyBtn > span {
+    display: block;
+    border: 1px solid var(--black);
+}
+.checkoutBtn {
+    display: block;
+    margin: 0 auto;
+}
+.orderContainer {
+    max-width: unset;
+    width: 63%;
+}
+.orderContainer h3 {
+    margin-bottom: 40px;
+}
+.orderWrapper .ticketHeader {
+    display: flex;
+    align-items: center;
+}
+.completedText {
+    font-size: var(--font-size--h3);
+    font-weight: var(--font-weight--regualr);
+    background: var(--gray--1);
+    padding: 5px 12px;
+    border-radius: 25px;
+    margin-left: 10px;
+}
+.orderWrapper .ticketInfo {
+    border-bottom: 0;
+}
+.orderInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    border-bottom: 1px solid var(--gray--2);
+}
+.orderInfo li {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.orderInfo li:last-child {
+    margin-bottom: 0;
+}
+.orderTotal {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0 60px;
+}
+.orderTotal span {
+    font-size: var(--font-size--h1);
+}
+.orderContainer button {
+    width: 100%;
+    background: var(--black);
+}
+.orderContainer button:disabled {
+    background: var(--gray--5);
+}
+.orderContainer button.success {
+    background: var(--white);
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+}
+.orderTicketInfo {
+    width: 100%;
+    padding: 20px;
+    background: var(--gray--0);
+}
+.orderTicketInfo > * {
+    font-size: 14px;
+}
+.orderTicketInfo span {
+    display: block;
+    margin-bottom: 20px;
+}
+.orderTicketInfo p {
+    line-height: 1.8;
+}
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+    .infoContainer, .orderContainer {
+        width: 61%;
+    }
+    .paymentLabel:last-child {
+        margin-top: 25px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .ticketInfo {
+        padding: 40px 0 0;
+        border: 0;
+    }
+    .exhibitionImg {
+        width: 100%;
+    }
+    .infoOption {
+        width: 100%;
+        height: auto;
+        padding: 30px 0 40px;
+    }
+    .infoOption h3 {
+        margin-bottom: 30px;
+    }
+    .infoOption ul li {
+        height: auto;
+        margin-bottom: 40px;
+        justify-content: space-between;
+    }
+    .btnContainer {
+        margin: 0;
+    }
+    .totalPrice {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .totalPrice span {
+        display: block;
+        margin-left: auto;
+        margin-top: 18px;
+    }
+    .buyBtn {
+        width: 100%;
+        margin: 0 0 80px;
+    }
+    .infoContainer {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+    }
+    .infoExhibition ul {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .infoExhibition ul li {
+        font-size: 14px;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .infoExhibition ul li:nth-child(odd) {
+        margin-right: 0;
+    }
+    .infoExhibition ul li label {
+        min-width: unset;
+        margin-right: 0;
+    }
+    .infoExhibition ul li a, .infoExhibition ul li p {
+        min-width: unset;
+    }
+    .placeLink {
+        padding-right: 5px;
+    }
+    .placeLink:after {
+        right: -5px;
+    }
+    .detailWrap {
+        padding-top: 60px;
+    }
+    .detailWrap h4 {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+    .detailInfo {
+        height: 340px;
+    }
+    .detailInfo img {
+        width: 100%;
+    }
+    .viewMoreBtn {
+        box-shadow: -5px -15px 40px rgb(255 252 252);
+    }
+    .subInfo {
+        padding: 30px 0 0;
+    }
+    .subInfo h4 {
+        font-size: 22px;
+    }
+    .verifContainer {
+        padding: 0;
+        margin-bottom: 80px;
+        flex-direction: column;
+    }
+    .verifContainer article {
+        padding: 23px 20px 0;
+    }
+    .verifBtn {
+        width: 100%;
+        margin-top: 60px;
+    }
+    .ticketCheck h3 {
+        margin-bottom: 0;
+    }
+    .ticketCheckInfo .infoContainer {
+        width: 100%;
+        margin: 0;
+    }
+    .ticketCheckInfo .infoContainer h3 {
+        margin: 30px 0 20px;
+    }
+    .ticketCheckInfo .infoExhibitionCheck {
+        margin-bottom: 55px;
+    }
+    .ticketCheckInfo .orderHistoryContainer h3 {
+        display: flex;
+        justify-content: space-between;
+    }
+    .orderHistoryContainer ul li {
+        margin-bottom: 30px;
+    }
+    .optionChangeM {
+        width: auto;
+        height: auto;
+        background: none;
+        color: var(--blue);
+        position: relative;
+    }
+    .optionChangeM:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: var(--blue);
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+    }
+    .checkVisitInfo {
+        margin: 0 0 80px;
+    }
+    .ticketCheck .checkVisitInfo h3, .ticketCheck .verifContainer h3 {
+        margin-bottom: 25px;
+    }
+    .viewMoreBtn.view {
+        margin-top: 20px;
+    }
+    .ticketCheck .paymentContainer {
+        margin-bottom: 60px;
+    }
+    .ticketCheck .paymentContainer > div {
+        margin-bottom: 0;
+    }
+    .ticketCheck .paymentContainer h3 {
+        margin-bottom: 30px;
+    }
+    .ticketCheck .paymentLabel {
+        width: 46%;
+        padding: 16px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+    .ticketCheck .policyBtn {
+        width: 100%;
+        padding: 20px 10px;
+        align-items: flex-start;
+        text-align: left;
+        background: var(--gray--0);
+    }
+    .ticketCheck .policyBtn > span {
+        display: block;
+    }
+    .ticketCheck .policyBtn > p {
+        max-width: 90%;
+    }
+    .checkoutBtn {
+        width: 100%;
+    }
+    .orderWrapper .ticketHeader {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 34px;
+    }
+    .completedText {
+        margin: 0 0 15px;
+    }
+    .orderTotal {
+        margin: 20px 0 52px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .orderTotal span {
+        margin-left: auto;
+        margin-top: 18px;
+    }
+    .orderTicketInfo {
+        margin-top: 80px;
+    }
+    .orderInfo {
+        padding-bottom: 60px;
+    }
+    .orderInfo li {
+        font-size: var(--font-size--h4);
+    }
+}
+@media screen and (max-width: 480px) {
+    .ticketWrapper {
+        width: 360px;
+        padding: 0 20px 100px;
+    }
+    .detailInfo img {
+        width: 100%;
+    }
+}

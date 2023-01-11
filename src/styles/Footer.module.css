@@ -1,0 +1,103 @@
+.footerWrap {
+    width: 100%;
+    height: 240px;
+    font-size: var(--font-size--h5);
+    color: #777;
+    display: flex;
+    flex-direction: column;
+}
+.footerWrap.hide {
+    margin-bottom: 0;
+}
+.footerNotice {
+    padding: 19px 40px;
+    background: var(--warm-white);
+    text-align: center;
+}
+.footerWrap footer {
+    width: 100%;
+    height: 100%;
+    padding: 35px 40px;
+    text-align: left;
+    position: relative;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.footerAcc {
+    max-width: 700px;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footerAcc li, .footerInfo, .footerInfo li a, .footerInfo li button .copyright, .footerNotice p {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.footerAcc li {
+    line-height: 2;
+}
+.footerInfo {
+    max-width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footerAcc li {
+    position: relative;
+    margin-right: 1rem;
+}
+.footerInfo li a, .footerInfo li button, .footerInfo li span {
+    color: var(--gray--5);
+    margin-right: 1rem;
+    position: relative;
+}
+.footerInfo li button {
+    font-size: var(--font-size--h5);
+}
+.footerInfo li button strong {
+    color: #444;
+}
+.footerInfo li a:after, .footerInfo li button:after, .footerAcc li:after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 7px;
+    background: var(--gray--2);
+    position: absolute;
+    right: -0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.footerAcc li:last-child:after,
+.footerAcc li:nth-child(5):after {
+    display: none;
+}
+.copyright {
+    display: block;
+    font-size: 12px;
+    color: var(--gray--3);
+    margin-top: 10px;
+}
+.footerSns {
+    width: auto;
+    height: 18px;
+    display: flex;
+    font-size: 1rem;
+    color: var(--black);
+    position: absolute;
+    top: 31px;
+    right: 40px;
+}
+.footerSns a {
+    display: block;
+}
+.insta { width: 20px; background: url("/src/assets/images/instagram-icon.svg")no-repeat center; }
+.youtube { width: 23px; background: url("/src/assets/images/youtube-icon.svg")no-repeat center; margin-left: 20px }
+@media screen and (max-width: 580px) {
+    .footerWrap {height: auto}
+    .footerNotice {height: 70px; padding: 13px 20px; display: flex; align-items: center}
+    .footerWrap footer {padding: 30px 20px 40px;}
+    .footerInfo {flex-direction: column; align-items: center; margin: 0}
+    .footerInfo li:first-child { margin-bottom: 5px }
+    .footerInfo li a, .footerInfo li button, .footerInfo li span {margin: 0 0.5rem}
+    .footerAcc {margin-top: 20px; letter-spacing: -1px; }
+    .footerAcc li:after, .footerInfo li button:nth-child(3):after {display: none}
+    .footerSns {position: static; margin-top: 30px}
+}

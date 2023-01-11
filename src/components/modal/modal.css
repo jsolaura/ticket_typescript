@@ -1,0 +1,110 @@
+.popupWrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+.popupClose {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.popupContentWrap {
+    padding: 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: var(--white);
+}
+.popupContentWrap h3 {
+    font-size: 22px;
+    margin-bottom: 35px;
+}
+.popupContentWrap form {
+    width: 320px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.popupContentWrap form label {
+    margin-bottom: 30px;
+}
+.popupContentWrap form label:last-child {
+    margin-bottom: 0;
+}
+.popupContentWrap form label > input {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+}
+.orderHistoryContainer ul li p b {
+    display: block;
+    font-weight: var(--font-weight--regualr);
+    font-size: var(--font-size--h4);
+}
+.phoneContainer {
+    margin-bottom: 30px;
+}
+.phoneContainer label {
+    width: 100%;
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 10px !important;
+}
+.phoneContainer label input {
+    width: 60% !important;
+    margin-top: 0 !important;
+}
+.phoneContainer label button {
+    width: 40% !important;
+    height: 45px !important;
+}
+.popupBtnWrap {
+    width: 100%;
+    display: flex;
+}
+.popupBtnWrap button {
+    width: 50%;
+    height: 55px;
+}
+.closeBtn {
+    background: var(--gray--2);
+    border-bottom-left-radius: 10px;
+}
+.confirmBtn {
+    border-bottom-right-radius: 10px;
+}
+.passwordContainer {
+    position: relative;
+}
+.passwordContainer input {
+    width: 100%;
+}
+.changePwWrap form label > span {
+    display: block;
+    margin-bottom: 15px;
+}
+.passwordBtn {
+    width: 16px;
+    height: 16px;
+    background: url("/src/assets/images/eye-off.svg") no-repeat center center / 100%;
+    position: absolute;
+    top: 50%;
+    right: 17px;
+    transform: translateY(-50%);
+    z-index: 100;
+}
+.passwordBtn.passwordBtnVisible {
+    background: url("/src/assets/images/eye-on.svg") no-repeat center center / 100%;
+}
+@media screen and (max-width: 480px) {
+    .popupWrap {
+        width: 300px;
+    }
+    .popupContentWrap {
+        padding: 38px 30px 50px;
+    }
+    .popupContentWrap form {
+        width: 100%;
+    }
+}

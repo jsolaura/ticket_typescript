@@ -1,0 +1,176 @@
+.csWrap {
+    min-height: 80vh;
+    margin: 80px auto 0;
+    padding: 0 40px 110px;
+    transition: all 0.35s;
+}
+.csWrap.csWrapLeft {
+    transform: translateX(-13.5%);
+}
+.csWrap h1 {
+    margin-bottom: 60px;
+    font-size: var(--font-size--h1);
+}
+.csNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid var(--black);
+}
+.csGnb a {
+    font-size: var(--font-size--h3);
+    color: var(--gray--4);
+}
+.csGnb .Mui-selected {
+    color: var(--black);
+    font-weight: var(--font-weight--bold);
+}
+.csNavBtn {
+    width: 140px;
+    height: 45px;
+    line-height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: var(--font-size--h3);
+}
+.noticeHeaderWrap > div:first-child {
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: var(--font-size--h4);
+    color: var(--black);
+    padding: 25px 15px !important;
+    margin: 0 !important;
+}
+.noticeContent {
+    font-size: var(--font-size--h4);
+    transition: border-top 0.5s 0.35s;
+}
+.noticeContent img {
+    max-width: 100%;
+    width: auto;
+    margin: 0 auto 30px;
+}
+.noticeUrl {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    padding-left: 20px;
+    font-size: var(--font-size--h4);
+    color: var(--gray--4);
+    background: url("/src/assets/images/copy.svg") no-repeat left center;
+}
+.noticeCategory, .noticeDate {
+    font-size: var(--font-size--h5);
+}
+.noticeName {
+    font-size: var(--font-size--h4);
+}
+.noticeCategory {
+    color: var(--blue);
+}
+.noticeDate {
+    color: var(--gray--4);
+    margin-top: 0.2rem;
+}
+.inquiryWrap {
+    margin-top: 100px;
+}
+.inquiryWrap h2 {
+    margin-bottom: 10px;
+}
+.inquiryWrap h5 {
+    font-size: var(--font-size--h3);
+    font-weight: normal;
+    margin-bottom: 80px;
+}
+.inquiryWrap form {
+    width: 100%;
+}
+.formInput {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 45px;
+}
+.formInput > div {
+    width: 80%;
+}
+.formInput > span {
+    width: 20%;
+}
+.formInput textarea {
+    width: 100%;
+    height: 320px;
+ }
+.formInput input {
+    display: block;
+    width: 100%;
+}
+.formTextarea span {
+    margin-bottom: auto;
+}
+.inquiryWrap form .line {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: var(--black);
+    margin-bottom: 60px;
+}
+.submitBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 420px;
+    height: 55px;
+    margin: 0 auto;
+}
+.spanMsg {
+    display: block;
+}
+@media screen and (max-width: 480px) {
+    .csWrap {
+        width: 360px;
+        padding: 0 20px 90px;
+    }
+    .csNav {
+        width: 100%;
+    }
+    .noticeContent img {
+        width: 100% !important;
+        height: auto !important;
+        object-fit: contain !important;
+    }
+    .inquiryWrap {
+        margin-top: 80px;
+    }
+    .inquiryWrap h5 {
+        line-height: 1.6;
+        margin-bottom: 100px;
+    }
+    .formInput {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .formInput span {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .formInput > div {
+        width: 100%;
+    }
+    .formInput textarea {
+        height: 300px;
+    }
+    .formTextarea {
+        margin-bottom: 120px;
+    }
+    .submitBtn {
+        width: 100%;
+    }
+}

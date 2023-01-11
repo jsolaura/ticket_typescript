@@ -1,0 +1,14 @@
+export const ticketDetailsUrl: string = "/ticketDetails";
+export const ticketCheckoutUrl: string = "/ticketDetails/checkout";
+export const ticketCompletedUrl: string = "/ticketDetails/ticketOrder/completed/:id";
+export const myPageUrl: string = "/myPage";
+export const myPageTicketOrderUrl: string = "/myPage/ticketOrder/detail/:id";
+export const loginUrl: string = "/login";
+export const findPasswordUrl: string = "/findPassword";
+export const registerUrl: string = "/register";
+export const customerServiceUrl: string = "/customerService";
+export const privacyPolicyUrl: string = "/faq/policy/PrivacyPolicy";
+export const termsOfUseUrl: string = "/faq/policy/TermsOfService";
+export const oauthUrl: string = "/oauth";
+export const errorUrl: string = "/error";
+export const mainUrl: string = "/";

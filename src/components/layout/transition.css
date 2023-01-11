@@ -1,0 +1,22 @@
+.transition-wrap {
+    position: relative;
+    overflow: hidden;
+}
+.authTransition-enter {
+    opacity: 0;
+    transform: translateY(-70px);
+}
+.authTransition-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.3s;
+}
+.authTransition-exit {
+    opacity: 1;
+}
+.authTransition-exit-active {
+    opacity: 0;
+    transform: translateY(-70px);
+    transition: all 0.3s;
+}
+

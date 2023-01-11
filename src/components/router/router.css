@@ -1,0 +1,38 @@
+.loading {
+    height: 100vh;
+    overflow: hidden;
+}
+.transition-group {
+    position: relative;
+}
+.pageSlider {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    scroll-behavior: smooth;
+}
+.pageSlider-enter {
+    opacity: 0;
+    /*transform: translateX(100%);*/
+}
+
+.pageSlider-enter-active {
+    opacity: 1;
+    /*transform: translateX(0);*/
+    transition: all 0.35s ease-in-out;
+}
+
+.pageSlider-exit {
+    opacity: 1;
+    /*transform: translateX(0);*/
+}
+
+.pageSlider-exit-active {
+    opacity: 0;
+    /*transform: translateX(-100%);*/
+    transition: all 0.35s ease-in-out;
+}
+.cursor {
+    cursor: none;
+}
